@@ -4,7 +4,8 @@ import { Box } from "@primer/react";
 import { Prism } from "@mantine/prism";
 
 export default function(props: FileBlockProps) {
-  // TODO: allow passed config
+  // TODO: allow 
+  // passed config
   const packageManagers = [
     { name: "brew", command: "brew install neovim" },
     { name: "yum", command: "yum install neovim" },
@@ -17,13 +18,13 @@ export default function(props: FileBlockProps) {
       <Tabs defaultValue="brew">
         <Tabs.List>
           {packageManagers.map((item) => (
-            <Tabs.Tab value={item.name}>{item.name}</Tabs.Tab>
+            <Tabs.Tab key={item.name} value={item.name}>{item.name}</Tabs.Tab>
           ))}
         </Tabs.List>
 
         {packageManagers.map((item) => {
           return (
-            <Tabs.Panel value={item.name} pt="xs">
+            <Tabs.Panel key={item.name} value={item.name} pt="xs">
               <Prism language="markdown">{item.command}</Prism> 
             </Tabs.Panel>
           );
