@@ -1,0 +1,11 @@
+[
+  {
+    "type": "file",
+    "id": "package-install-block",
+    "title": "package-install",
+    "description": "Make your package installs short and sweet™",
+    "entry": "blocks/package-install/index.tsx",
+    "matches": ["*"],
+    "example_path": "https://github.com/Hacksore/package-install-block/blob/main/README.md"
+  }
+]
