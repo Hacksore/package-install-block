@@ -10,7 +10,11 @@
     "tsc": "tsc"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.6",
     "@githubnext/blocks": "^2.3.5",
+    "@mantine/core": "^6.0.4",
+    "@mantine/hooks": "^6.0.4",
+    "@mantine/prism": "^6.0.4",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
   },
